@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css" class="css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用量計算</title>
+</head>
+
+<body>
+    <div class="all">
+        <div class="input">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="7">用量計算</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>收縮膜領料</td>
+                        <td><input type="number" id="use-1">KG</td>
+                        <td><input type="number" id="row-1" readonly>捲</td>
+                        <td>總重</td>
+                        <td colspan="2"><input type="number" id="wg-1">KG</td>
+
+
+                    </tr>
+                    <tr>
+                        <td>收縮膜退料</td>
+                        <td><input type="number" id="use-2">KG</td>
+                        <td><input type="number" id="row-2" readonly>捲</td>
+
+                    </tr>
+                    <tr>
+                        <td>收縮膜實領</td>
+                        <td><input type="text" id="use-3" readonly>KG</td>
+                        <td><input type="text" id="row-3" readonly>捲</td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class="screen">
+
+            <input type="button" value="顯示" id="appear">
+            <input type="button" value="清除" id="delete">
+            <a id="dlink" style="display:none;"></a>
+            <input type="button" value="下載" id="btnExport" />
+            <div class="appear">
+                <table class="add" id="table">
+
+                    <tr>
+                        <th>收縮膜實領</td>
+                        <th>KG</td>
+                        <th>捲</td>
+                    </tr>
+                    <tbody class="appen">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <script src="bower_components\jquery\dist\jquery.min.js"></script>
+    <script src="bower_components\jquery-table2excel\dist\jquery.table2excel.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

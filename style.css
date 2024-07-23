@@ -1,0 +1,28 @@
+.all {
+    width: 700px;
+
+}
+
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+table,
+th,
+td {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.input input {
+    width: 50px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.screen input {
+    margin: 10px;
+}
